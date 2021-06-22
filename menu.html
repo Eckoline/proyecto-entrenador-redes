@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#A19C8C">
+    <div align="center"><img src="crd.png" width="200" height="200"></div>
+    
+    <FORM name=form1 action="p1.html">
+    <div align="center">
+        <INPUT onclick=p1() type=button value="Práctica 1", id=practica1>
+    </div>
+    </FORM> 
+
+    <FORM name=form2 action="p2.html">
+        <div align="center">
+            <INPUT onclick=p2() type=button value="Práctica 2", id=practica2>
+        </div>
+        </FORM> 
+    <FORM name=form3 action="p3.html">
+    <div align="center">
+        <INPUT onclick=p3() type=button value="Práctica 3", id=practica3>
+    </div>
+    </FORM> 
+    <FORM name=form4 action="p4.html">
+        <div align="center">
+            <INPUT type=button value="Práctica 4", id=practica4>
+        </div>
+        </FORM> 
+    <FORM name=form5 action="p5.html">
+        <div align="center">
+            <INPUT onclick=p5() type=button value="Práctica 5", id=practica5>
+        </div>
+        </FORM> 
+    <FORM name=form6 action="p6.html">
+        <div align="center">
+            <INPUT onclick=p6() type=button value="Práctica 6", id=practica6>
+        </div>
+        </FORM> 
+    <FORM name=form7 action="p7.html">
+        <div align="center">
+            <INPUT onclick=p7() type=button value="Práctica 7", id=practica7>
+        </div>
+        </FORM> 
+    <FORM name=form8 action="p8.html">
+        <div align="center">
+            <INPUT onclick=p8() type=button value="Práctica 8", id=practica8>
+        </div>
+        </FORM> 
+    <FORM name=form9 action="p9.html">
+        <div align="center">
+            <INPUT onclick=p9() type=button value="Práctica 9", id=practica9>
+        </div>
+        </FORM> 
+    <FORM name=form10 action="p10.html">
+        <div align="center">
+            <INPUT onclick=p10() type=button value="Práctica 10", id=practica10>
+        </div>
+        </FORM> 
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script> 
+        </script> 
+<SCRIPT  language=JavaScript> 
+            // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC5VczfWR-ygZK9Xauh33nWlzUnl7E-ZtI",
+            authDomain: "proyecto2-6f9f7.firebaseapp.com",
+            databaseURL: "https://proyecto2-6f9f7-default-rtdb.firebaseio.com",
+            projectId: "proyecto2-6f9f7",
+            storageBucket: "proyecto2-6f9f7.appspot.com",
+            messagingSenderId: "1004034037233",
+            appId: "1:1004034037233:web:fd61e6c00dcd46288c6050"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        var app = document.getElementById('app')
+        var dbRef = firebase.database()
+        
+        practica4.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form4.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 4  
+                });
+                
+        });
+        
+        practica1.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form1.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 1  
+                });
+                
+        });
+
+        practica2.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form2.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 2  
+                });
+                
+        });
+
+        practica3.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form3.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 3  
+                });
+                
+        });
+
+        practica5.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form5.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 5  
+                });
+                
+        });
+
+        practica6.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form6.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 6  
+                });
+                
+        });
+
+        practica7.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form7.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 7  
+                });
+                
+        });
+
+        practica8.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form8.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 8  
+                });
+                
+        });
+
+        practica9.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 0  
+                    });
+                    document.form9.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 9  
+                });
+                
+        });
+
+        practica10.addEventListener('click', (e) =>{
+            e.preventDefault();
+                setTimeout(function(){
+                    dbRef.ref('/Practica').set({
+                        practica: 10  
+                    });
+                    document.form10.submit();
+                 }, 3500);
+                dbRef.ref('/Practica').set({
+                    practica: 10  
+                });
+                
+        });
+
+
+</SCRIPT>                                                                                    
+</body>
+</html>

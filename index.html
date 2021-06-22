@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para 1 usuario</title>
+</head>
+
+<body bgcolor="#A19C8C">
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='1234' && document.form.login.value=='GERA'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="menu.html">
+<div align="center"><img src="crd.png" width="200" height="200"></div>
+<div align="center">
+    <P>Usuario:    <INPUT type=text name=login> 
+    <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña: <INPUT type=password name=password> 
+    <INPUT onclick=go() type=button value=Acceder>
+</div>
+
+
+</FORM> 
+</body>
+</html>
