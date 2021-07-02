@@ -54,18 +54,18 @@ var S7 = dbRef.ref('S7')
 //     }
 // });
 
-// iniciar_sec.addEventListener('click', (e) =>{
-//     e.preventDefault();
-//         setTimeout(function(){
-//             dbRef.ref('/Arranque').set({
-//                 arranque: 0  
-//             });
-//          }, 3000);
+iniciar_sec.addEventListener('click', (e) =>{
+    e.preventDefault();
+         setTimeout(function(){
+             dbRef.ref('/Arranque').set({
+                 arranque: 0  
+             });
+          }, 3000);
 
-//         dbRef.ref('/Arranque').set({
-//             arranque: 1  
-//         });
-// });
+         dbRef.ref('/Arranque').set({
+             arranque: 1  
+         });
+ });
 
 
 
@@ -120,11 +120,21 @@ E4.on('value', function(snap) {
     {
         var led = document.getElementById('led_E4');
         led.src = "led_on.png";
+
+        var s = document.getElementById('secue');
+        s.src = "Secuencia 2_p4.png";
+        s.style.height = '170px';
+        s.style.width = '500px';
     }
     else
     {
         var led = document.getElementById('led_E4');
         led.src = "led_off.png";
+
+        var s = document.getElementById('secue');
+        s.src = "Secuencia 1_p4.png";
+        s.style.height = '170px';
+        s.style.width = '450px';
     }
 })
 E5.on('value', function(snap) {
